@@ -1,0 +1,12 @@
+uuid: 49a2c44b-a2de-4eba-8c90-777560f1e18e
+langcode: sv
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 3vA4FKQ1Qu8B1R8UdGPnmMfJrYO6Y6uMqeNgDgXxods
+id: t_shirt
+label: T-Shirt
+traits: {  }
+locked: false
+orderItemType: default
+generateTitle: false

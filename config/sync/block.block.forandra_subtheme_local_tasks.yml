@@ -1,0 +1,22 @@
+uuid: 7694b73c-802f-4109-84f0-2475da0edd66
+langcode: sv
+status: true
+dependencies:
+  theme:
+    - forandra_subtheme
+_core:
+  default_config_hash: Qf2BoIzd9py5AYXZj8fJzCYDyVk1-AWXcu-AqQeDZKA
+id: forandra_subtheme_local_tasks
+theme: forandra_subtheme
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Flikar
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

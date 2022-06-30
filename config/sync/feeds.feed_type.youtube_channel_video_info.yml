@@ -1,0 +1,185 @@
+uuid: 57bf583b-f15b-4980-b7d3-2134b7854cc3
+langcode: sv
+status: true
+dependencies:
+  config:
+    - field.field.node.article.body
+    - field.field.node.article.field_image
+    - field.field.node.article.field_media
+    - node.type.article
+  module:
+    - feeds_ex
+    - feeds_tamper
+    - node
+    - publication_date
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      e0c76f72-9971-4d08-ba72-5db5882b3479:
+        text: 'https://www.youtube.com/watch?v=[_id_videoid]'
+        uuid: e0c76f72-9971-4d08-ba72-5db5882b3479
+        plugin: rewrite
+        source: _id_videoid
+        weight: -9
+        label: 'Rewrite add https://www.youtube.com/watch?v=[_id_videoid]'
+      3a1c322b-4eed-4628-a364-24199b1b0df4:
+        separator: ','
+        limit: null
+        uuid: 3a1c322b-4eed-4628-a364-24199b1b0df4
+        plugin: explode
+        source: _snippet_thumbnails_high_url
+        weight: 0
+        label: Explode
+      048a22bc-39b7-44c3-9b17-015af4c42c49:
+        separator: ','
+        limit: null
+        uuid: 048a22bc-39b7-44c3-9b17-015af4c42c49
+        plugin: explode
+        source: _snippet_title
+        weight: 0
+        label: Explode
+      8bca8621-9b7d-4b3b-96d3-e254ddb7ebc8:
+        separator: ','
+        limit: null
+        uuid: 8bca8621-9b7d-4b3b-96d3-e254ddb7ebc8
+        plugin: explode
+        source: _id_videoid
+        weight: -10
+        label: Explode
+      f1040cb2-05bc-4fba-a82d-1067d20f806d:
+        uuid: f1040cb2-05bc-4fba-a82d-1067d20f806d
+        plugin: html_entity_decode
+        source: _snippet_title
+        weight: 1
+        label: 'HTML entity decode'
+      08e87345-6908-4d09-ab23-f9fad207e1b7:
+        separator: ','
+        limit: null
+        uuid: 08e87345-6908-4d09-ab23-f9fad207e1b7
+        plugin: explode
+        source: _snippet_channeltitle
+        weight: 0
+        label: Explode
+label: 'YouTube Channel video INFO'
+id: youtube_channel_video_info
+description: 'Hämta text mm för video'
+help: ''
+import_period: -1
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: false
+  fallback_hub: ''
+  request_timeout: 50
+parser: jsonpath
+parser_configuration:
+  context:
+    value: '$.items[*]'
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: article
+  langcode: und
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: true
+  authorize: false
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  _id_videoid:
+    value: .id.videoId
+    label: .id.videoId
+    machine_name: _id_videoid
+    type: json
+  _snippet_title:
+    value: .snippet.title
+    label: .snippet.title
+    machine_name: _snippet_title
+    type: json
+  _snippet_description:
+    value: .snippet.description
+    label: .snippet.description
+    machine_name: _snippet_description
+    type: json
+  _snippet_thumbnails_high_url:
+    value: .snippet.thumbnails.high.url
+    label: .snippet.thumbnails.high.url
+    machine_name: _snippet_thumbnails_high_url
+    type: json
+  _snippet_channeltitle:
+    value: .snippet.channelTitle
+    label: .snippet.channelTitle
+    machine_name: _snippet_channeltitle
+    type: json
+  _snippet_publishedat:
+    value: .snippet.publishedAt
+    label: .snippet.publishedAt
+    machine_name: _snippet_publishedat
+    type: json
+mappings:
+  -
+    target: title
+    map:
+      value: _snippet_title
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: body
+    map:
+      value: _snippet_description
+      summary: _snippet_description
+    settings:
+      language: ''
+      format: basic_html
+  -
+    target: field_media
+    map:
+      target_id: _id_videoid
+    settings:
+      language: ''
+      reference_by: field_media_oembed_video
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: field_image
+    map:
+      target_id: _snippet_thumbnails_high_url
+      alt: _snippet_title
+      title: _snippet_title
+    settings:
+      language: ''
+      reference_by: fid
+      existing: '0'
+      autocreate: 0
+  -
+    target: nid
+    map:
+      value: _id_videoid
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: uid
+    map:
+      target_id: _snippet_channeltitle
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 0
+  -
+    target: published_at
+    map:
+      value: _snippet_publishedat
+    settings:
+      language: null
+      timezone: UTC

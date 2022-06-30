@@ -1,0 +1,14 @@
+uuid: 8e85be9d-5690-47c0-99bb-f5adcf1b1432
+langcode: sv
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Återkoppling till webbplats'
+recipients:
+  - kontakt@forandra.nu
+reply: ''
+weight: 0
+message: 'Ditt meddelande har skickats.'
+redirect: ''

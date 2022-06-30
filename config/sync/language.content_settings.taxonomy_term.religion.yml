@@ -1,0 +1,11 @@
+uuid: 95963f15-26b9-4ee9-8aa1-2b40d82a4705
+langcode: sv
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.religion
+id: taxonomy_term.religion
+target_entity_type_id: taxonomy_term
+target_bundle: religion
+default_langcode: site_default
+language_alterable: true

@@ -1,0 +1,29 @@
+uuid: 9b98ca93-b703-4cf7-b2b1-b9b51da5911d
+langcode: sv
+status: true
+dependencies:
+  module:
+    - block_class
+    - system
+  theme:
+    - forandra_subtheme
+third_party_settings:
+  block_class:
+    classes: 'd-flex flex-row'
+_core:
+  default_config_hash: d-0emr1mEq7sFKDu5RHUJckvNk62hvIZdRwPEfnJyGg
+id: forandra_subtheme_branding
+theme: forandra_subtheme
+region: top_header
+weight: -7
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Webbplatsens varumärke'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

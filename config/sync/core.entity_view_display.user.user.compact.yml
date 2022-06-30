@@ -1,0 +1,109 @@
+uuid: 0d122a8a-9843-4764-a5af-08d18c684c59
+langcode: sv
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.user.compact
+    - field.field.user.user.commerce_remote_id
+    - field.field.user.user.field_biography
+    - field.field.user.user.user_picture
+    - image.style.max_325x325
+  module:
+    - image
+    - layout_builder
+    - layout_discovery
+    - text
+    - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          90d6aceb-12ac-4c90-a108-cadfbeda3e35:
+            uuid: 90d6aceb-12ac-4c90-a108-cadfbeda3e35
+            region: content
+            configuration:
+              id: 'field_block:user:user:user_picture'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: max_325x325
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          2e015ff9-6f7b-4299-822b-b43c4cff4862:
+            uuid: 2e015ff9-6f7b-4299-822b-b43c4cff4862
+            region: content
+            configuration:
+              id: 'field_block:user:user:field_biography'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_summary_or_trimmed
+                label: above
+                settings:
+                  trim_length: 150
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          4598860d-0710-4d3a-a22c-82732921882a:
+            uuid: 4598860d-0710-4d3a-a22c-82732921882a
+            region: content
+            configuration:
+              id: 'field_block:user:user:name'
+              label: Name
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: string
+                label: hidden
+                settings:
+                  link_to_entity: true
+                third_party_settings: {  }
+            weight: 1
+            additional:
+              layout_builder_styles_style: ''
+        third_party_settings: {  }
+_core:
+  default_config_hash: kD2TjItfNDKFw2CFJQfuv4Ys6qg3uYa4hCJYN2jreec
+id: user.user.compact
+targetEntityType: user
+bundle: user
+mode: compact
+content:
+  field_biography:
+    type: text_summary_or_trimmed
+    label: above
+    settings:
+      trim_length: 150
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: max_325x325
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  commerce_remote_id: true
+  customer_profiles: true
+  langcode: true
+  member_for: true

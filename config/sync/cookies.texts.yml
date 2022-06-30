@@ -1,0 +1,26 @@
+_core:
+  default_config_hash: r0JMDv27tTPrhzD4ypdLS0Jijl0-ccTUdlBkqvbAa8A
+langcode: sv
+bannerText: 'Vi använder utvalda och 3:e part cookies på denna webbplats: Nödvändiga cookies för vitala funktioner på webbplatsen, spårningscookies för statistik och marknadsföringscookies för bättre annonser till webbplatsen och dess innehåll.'
+privacyPolicy: Integritetspolicy
+privacyUri: /node/25
+imprint: Imprint
+imprintUri: ''
+cookieDocs: 'Cookie dokumentation'
+cookieDocsUri: /cookies/documentation
+denyAll: 'Neka alla'
+alwaysActive: 'Alltid aktiv'
+settings: 'Cookie inställningar'
+acceptAll: 'Acceptera alla'
+allowAll: 'Accept all'
+requiredCookies: 'Obligatoriska cookies'
+cookieSettings: 'Cookie inställningar'
+close: Stäng
+officialWebsite: 'Se officiell wewbbplats'
+readMore: 'Läs mer'
+allowed: Tillåtna
+denied: nekade
+settingsAllServices: 'Inställningar för tjänster'
+saveSettings: Spara
+default_langcode: en
+credit: ''

@@ -1,0 +1,20 @@
+uuid: c53d7bd9-a28c-4832-acf2-dfbc0b0966ca
+langcode: sv
+status: true
+dependencies:
+  theme:
+    - forandra_subtheme
+_core:
+  default_config_hash: ItFhhiUOoeR7oIq73ZaCV7PAYrOwXZ-9fazMzF5DJXM
+id: forandra_subtheme_page_title
+theme: forandra_subtheme
+region: content
+weight: -50
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Sidtitel
+  label_display: '0'
+  provider: core
+visibility: {  }

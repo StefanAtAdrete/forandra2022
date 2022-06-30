@@ -1,0 +1,11 @@
+uuid: ef33c12f-2bce-4c7e-909a-57900c8037e2
+langcode: sv
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.teknik
+id: taxonomy_term.teknik
+target_entity_type_id: taxonomy_term
+target_bundle: teknik
+default_langcode: site_default
+language_alterable: true

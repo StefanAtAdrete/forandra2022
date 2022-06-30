@@ -1,0 +1,12 @@
+uuid: a69e2532-dcc9-4167-9a92-b603d09ff9d1
+langcode: sv
+status: false
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: fVFfJv_GzBRE-wpRHbfD5a3VjnhbEOXG6lvRd3uaccY
+id: node.search_index
+label: Sökindex
+targetEntityType: node
+cache: true

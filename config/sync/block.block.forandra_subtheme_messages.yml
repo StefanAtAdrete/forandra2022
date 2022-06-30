@@ -1,0 +1,22 @@
+uuid: c23de141-ed93-43db-87df-b36b8b3ea2a7
+langcode: sv
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - forandra_subtheme
+_core:
+  default_config_hash: KC12e0aosUnBBs5bd374JVcQjJaFNOSIHzu0dUGf22o
+id: forandra_subtheme_messages
+theme: forandra_subtheme
+region: highlighted
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: Statusmeddelande
+  label_display: '0'
+  provider: system
+visibility: {  }

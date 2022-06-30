@@ -1,0 +1,81 @@
+uuid: c51d3859-fc1c-4b9a-9541-867f40d1f5fd
+langcode: sv
+status: true
+dependencies:
+  config:
+    - field.field.node.article.field_extra_info
+    - node.type.article
+  module:
+    - feeds_ex
+    - feeds_tamper
+    - node
+third_party_settings:
+  feeds_tamper:
+    tampers: {  }
+label: 'YouTube Channel video info EXTRA'
+id: youtube_channel_video_info_extra
+description: 'Hämta text mm för video'
+help: ''
+import_period: -1
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: false
+  fallback_hub: ''
+  request_timeout: 50
+parser: jsonpath
+parser_configuration:
+  context:
+    value: '$.items[*]'
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: article
+  langcode: und
+  insert_new: 0
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: true
+  authorize: true
+  expire: -1
+  owner_feed_author: true
+  owner_id: 1
+custom_sources:
+  _id_videoid:
+    value: .id.videoId
+    label: .id.videoId
+    machine_name: _id_videoid
+    type: json
+  _snippet_title:
+    value: .snippet.title
+    label: .snippet.title
+    machine_name: _snippet_title
+    type: json
+  _snippet_description:
+    value: .snippet.description
+    label: .snippet.description
+    machine_name: _snippet_description
+    type: json
+  _snippet_thumbnails_high_url:
+    value: .snippet.thumbnails.high.url
+    label: .snippet.thumbnails.high.url
+    machine_name: _snippet_thumbnails_high_url
+    type: json
+  _snippet_channeltitle:
+    value: .snippet.channelTitle
+    label: .snippet.channelTitle
+    machine_name: _snippet_channeltitle
+    type: json
+mappings:
+  -
+    target: field_extra_info
+    map:
+      value: _snippet_description
+    settings:
+      language: null
+      format: plain_text

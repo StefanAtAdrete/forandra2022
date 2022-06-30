@@ -1,0 +1,36 @@
+entity_type_groups:
+  commerce_product:
+    default:
+      basic: basic
+    t_shirt:
+      basic: basic
+  commerce_product_attribute_value:
+    farg:
+      basic: basic
+  commerce_product_variation:
+    default:
+      basic: basic
+    t_shirt:
+      basic: basic
+  feeds_feed:
+    youtube_channel_video_info:
+      basic: basic
+    youtube_channel_video_info_extra:
+      basic: basic
+    youtube_channel_videos_processor:
+      basic: basic
+  media:
+    image:
+      basic: basic
+    remote_video:
+      basic: basic
+  node:
+    article:
+      basic: basic
+    page:
+      basic: basic
+tag_trim_method: beforeValue
+tag_trim_maxlength:
+  metatag_maxlength_abstract: null
+  metatag_maxlength_description: null
+  metatag_maxlength_title: null

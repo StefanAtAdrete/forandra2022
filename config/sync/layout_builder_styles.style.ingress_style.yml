@@ -1,0 +1,11 @@
+uuid: bbd2f20f-cf7d-48cc-a9ad-6b7a79464555
+langcode: sv
+status: true
+dependencies: {  }
+id: ingress_style
+label: 'Ingress style'
+classes: 'bg-light rounded-3 px-2 py-2'
+type: section
+block_restrictions: {  }
+layout_restrictions: {  }
+weight: 0

@@ -1,0 +1,15 @@
+uuid: 9747322f-6b9c-4203-beb2-30bc38feb5ff
+langcode: sv
+status: true
+dependencies:
+  module:
+    - profile
+  enforced:
+    module:
+      - commerce_shipping
+_core:
+  default_config_hash: JPUL4eD5T2YoK0l8mg_Ey9_HY9vGRwqr4BM_GqaAgmw
+id: profile.shipping
+label: Leverans
+targetEntityType: profile
+cache: true

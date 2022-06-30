@@ -1,0 +1,33 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+
+.node--view-mode-teaser {
+  border-bottom: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+.block-field-blocknodearticletitle a {
+  text-decoration: none;
+}
+
+.sidebar_second {
+  margin-top: 10px;
+}
+
+
+.cart-offcanvas {
+    position: fixed;
+    min-height: 100%;
+    max-height: none;
+    top: 0;
+    display: block;
+    background: #fff;
+    transition: transform .3s cubic-bezier(.4,0,.6,1);
+    transform: translate3d(0,0,0);
+    backface-visibility: hidden;
+    overflow: hidden;
+    z-index: 1080;
+}

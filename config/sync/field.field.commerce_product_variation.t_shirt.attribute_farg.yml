@@ -1,0 +1,24 @@
+uuid: 2ac1985e-08bd-4c13-90a5-62624b9ccde8
+langcode: sv
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_attribute.farg
+    - commerce_product.commerce_product_variation_type.t_shirt
+    - field.storage.commerce_product_variation.attribute_farg
+id: commerce_product_variation.t_shirt.attribute_farg
+field_name: attribute_farg
+entity_type: commerce_product_variation
+bundle: t_shirt
+label: Färg
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:commerce_product_attribute_value'
+  handler_settings:
+    target_bundles:
+      - farg
+field_type: entity_reference

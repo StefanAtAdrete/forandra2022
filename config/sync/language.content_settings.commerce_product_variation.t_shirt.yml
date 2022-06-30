@@ -1,0 +1,11 @@
+uuid: 08f044aa-086e-4a48-9bdf-e1c3efa3d6ef
+langcode: sv
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.t_shirt
+id: commerce_product_variation.t_shirt
+target_entity_type_id: commerce_product_variation
+target_bundle: t_shirt
+default_langcode: site_default
+language_alterable: true

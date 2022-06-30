@@ -1,0 +1,19 @@
+uuid: 364c866e-ea24-4b46-9086-39682eee21da
+langcode: sv
+status: true
+dependencies: {  }
+id: dev
+label: Dev
+description: 'Development modules split out'
+weight: 0
+folder: ../config/dev
+module:
+  devel: 0
+  devel_generate: 0
+  restui: 0
+  views_ui: 0
+theme: {  }
+blacklist: {  }
+graylist: {  }
+graylist_dependents: true
+graylist_skip_equal: true

@@ -1,0 +1,9 @@
+uuid: 66263e2a-5a88-4e8c-b8a3-657fe26dc592
+langcode: sv
+status: true
+dependencies: {  }
+id: moms
+label: Moms
+plugin: european_union_vat
+configuration:
+  display_inclusive: true

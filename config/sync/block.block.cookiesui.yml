@@ -1,0 +1,20 @@
+uuid: 7d85a031-8ec2-4a3f-8b5a-b6db4c97a577
+langcode: sv
+status: true
+dependencies:
+  module:
+    - cookies
+  theme:
+    - forandra_subtheme
+id: cookiesui
+theme: forandra_subtheme
+region: footer_fifth
+weight: 0
+provider: null
+plugin: cookies_ui_block
+settings:
+  id: cookies_ui_block
+  label: 'Cookies UI'
+  label_display: '0'
+  provider: cookies
+visibility: {  }
