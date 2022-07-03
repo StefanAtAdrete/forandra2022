@@ -246,6 +246,28 @@ third_party_settings:
                   class: ''
                   style: 'border-radius: 25px;'
                   data: ''
+          ac617dc5-b227-41c3-ada2-7a32bb9f7b82:
+            uuid: ac617dc5-b227-41c3-ada2-7a32bb9f7b82
+            region: blb_region_col_2
+            configuration:
+              id: 'field_block:node:article:changed'
+              label: Ändrad
+              label_display: '0'
+              provider: layout_builder
+              context_mapping:
+                entity: layout_builder.entity
+                view_mode: view_mode
+              formatter:
+                type: timestamp
+                label: inline
+                settings:
+                  date_format: html_date
+                  custom_date_format: ''
+                  timezone: ''
+                third_party_settings: {  }
+            weight: 3
+            additional:
+              layout_builder_styles_style: ''
         third_party_settings: {  }
 _core:
   default_config_hash: 0ur5-yZyR8pJ3lugC_Micbr6V_tpMWz-yHFhtuLcZo8
