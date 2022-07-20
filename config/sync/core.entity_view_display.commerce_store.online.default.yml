@@ -1,4 +1,4 @@
-uuid: d5c3560b-093c-4889-ae7c-d04f693a744b
+uuid: 16d86fe5-8735-420b-a3e8-218b50419655
 langcode: sv
 status: true
 dependencies:
@@ -28,8 +28,5 @@ hidden:
   langcode: true
   mail: true
   name: true
-  prices_include_tax: true
-  shipping_countries: true
-  tax_registrations: true
   timezone: true
   uid: true

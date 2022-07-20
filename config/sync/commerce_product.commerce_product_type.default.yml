@@ -1,14 +1,16 @@
-uuid: 89572824-32c2-4e39-8d8f-b00818389122
+uuid: d7ca530d-a06c-43e5-ad0d-9943ed40ccc1
 langcode: sv
 status: true
 dependencies: {  }
 _core:
-  default_config_hash: igdv1CXBTq9vh-ONhQ2SFkVhr3bdfRC6nP1Uubdx-L0
+  default_config_hash: hwJoqnxqBS0fPM3s6FccZ2bWaq9LneRYLzFk-wlJWjs
 id: default
 label: Default
 traits: {  }
 locked: false
 description: ''
 variationType: default
+variationTypes:
+  - default
 multipleVariations: true
 injectVariationFields: true

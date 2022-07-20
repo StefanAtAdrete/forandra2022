@@ -1,4 +1,4 @@
-uuid: d8f24527-23a9-4457-afb9-d122fc0bfafa
+uuid: 977e1288-231a-454b-b607-55ed7e6ab595
 langcode: sv
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
 _core:
   default_config_hash: tu0PL5GIB4nIjUfFst2N0WsTO6Ju1WtX7lFr-ya9vAs
 id: commerce_products
-label: Products
+label: Varor
 module: views
 description: ''
 tag: Commerce
@@ -22,7 +22,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Products
+      title: Varor
       fields:
         commerce_product_bulk_form:
           id: commerce_product_bulk_form
@@ -441,7 +441,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'No products available.'
+          content: 'Inga varor tillgängliga.'
           tokenize: false
       sorts: {  }
       arguments: {  }

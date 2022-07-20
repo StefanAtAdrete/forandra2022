@@ -1,4 +1,4 @@
-uuid: fb5e8065-12b6-4da0-8cc2-aa9965b9aba2
+uuid: b6aba0d7-fe39-43ea-84b1-89121d9f80dc
 langcode: sv
 status: true
 dependencies: {  }
@@ -9,4 +9,4 @@ label: Default
 traits: {  }
 locked: false
 orderItemType: default
-generateTitle: false
+generateTitle: true

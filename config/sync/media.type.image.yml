@@ -1,14 +1,19 @@
-uuid: 37f31f29-194e-46ae-b876-3a5f2627c608
+uuid: 27d871b5-e8a2-449d-80d3-c49b36096adb
 langcode: sv
 status: true
-dependencies: {  }
+dependencies:
+  module:
+    - crop
+third_party_settings:
+  crop:
+    image_field: _none
 _core:
   default_config_hash: 6Qope5wG7HUpV0tPOBMtDI_GZkHFcF1Xj4hgD9Cu_hM
 id: image
 label: Image
 description: 'Use local images for reusable media.'
 source: image
-queue_thumbnail_downloads: false
+queue_thumbnail_downloads: true
 new_revision: true
 source_configuration:
   source_field: field_media_image

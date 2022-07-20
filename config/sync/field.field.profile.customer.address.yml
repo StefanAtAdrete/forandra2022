@@ -1,4 +1,4 @@
-uuid: 668a473c-de4e-4ca2-b469-7acc3487e09d
+uuid: 836b7b00-7ed3-4bd0-934b-7cb7744c1b04
 langcode: sv
 status: true
 dependencies:
@@ -13,7 +13,7 @@ id: profile.customer.address
 field_name: address
 entity_type: profile
 bundle: customer
-label: Address
+label: Adress
 description: ''
 required: true
 translatable: false

@@ -1,4 +1,4 @@
-uuid: 40739e72-0a2c-4c57-8bc1-7e01e3e887a2
+uuid: 14335be0-7b6f-4007-aab2-620f7599acda
 langcode: sv
 status: true
 dependencies:
@@ -10,7 +10,7 @@ dependencies:
   module:
     - image
 _core:
-  default_config_hash: I5UTk5ubfYtD3-bkArNVwSyFASGkM7D3OATxRwID9I4
+  default_config_hash: YcWqjhIlo-2RZUM5ogvRsrKB7M3voF2XB3lVLwgOlLU
 id: media.document.media_library
 targetEntityType: media
 bundle: document
@@ -22,6 +22,8 @@ content:
     settings:
       image_link: ''
       image_style: thumbnail
+      image_loading:
+        attribute: lazy
     third_party_settings: {  }
     weight: 0
     region: content

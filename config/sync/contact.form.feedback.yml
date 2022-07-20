@@ -1,4 +1,4 @@
-uuid: 8e85be9d-5690-47c0-99bb-f5adcf1b1432
+uuid: 4410f1a6-f293-470e-be78-8400556277c5
 langcode: sv
 status: true
 dependencies: {  }
@@ -7,7 +7,7 @@ _core:
 id: feedback
 label: 'Återkoppling till webbplats'
 recipients:
-  - kontakt@forandra.nu
+  - info@forandra.nu
 reply: ''
 weight: 0
 message: 'Ditt meddelande har skickats.'

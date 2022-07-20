@@ -146,7 +146,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: false
+            link_to_entity: true
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -167,7 +167,7 @@ display:
           entity_type: commerce_subscription
           entity_field: type
           plugin_id: commerce_entity_bundle
-          label: Type
+          label: Typ
           exclude: false
           alter:
             alter_text: false
@@ -560,7 +560,7 @@ display:
           admin_label: ''
           entity_type: commerce_subscription
           plugin_id: entity_operations
-          label: Operations
+          label: Funktioner
           exclude: false
           alter:
             alter_text: false

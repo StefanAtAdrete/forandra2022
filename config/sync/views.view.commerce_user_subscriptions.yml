@@ -427,7 +427,7 @@ display:
           admin_label: ''
           entity_type: commerce_subscription
           plugin_id: entity_operations
-          label: Operations
+          label: Funktioner
           exclude: false
           alter:
             alter_text: false

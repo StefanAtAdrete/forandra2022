@@ -1,11 +1,11 @@
-uuid: 71509314-7f68-4be8-8941-70d68f8f8de0
+uuid: b0234659-efa7-4dc1-a64c-430092c38d29
 langcode: sv
 status: true
 dependencies: {  }
 _core:
   default_config_hash: jonvgt3CkUM2eMLTFwWfHileWWDC4YtXCuIlCahTk_I
 id: personal
-label: 'Personligt kontaktformulär'
+label: 'Personal contact form'
 recipients: {  }
 reply: ''
 weight: 0

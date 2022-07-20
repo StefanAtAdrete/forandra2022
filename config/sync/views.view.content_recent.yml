@@ -1,4 +1,4 @@
-uuid: fb450f22-a1ef-40de-868e-96eba8d5999f
+uuid: 6dc438d6-ce78-45e4-bd1f-9abcfc5dcb7e
 langcode: sv
 status: true
 dependencies:
@@ -227,14 +227,7 @@ display:
           plugin_id: language
           operator: in
           value:
-            all: all
-            '***LANGUAGE_site_default***': '***LANGUAGE_site_default***'
-            '***LANGUAGE_language_interface***': '***LANGUAGE_language_interface***'
             '***LANGUAGE_language_content***': '***LANGUAGE_language_content***'
-            sv: sv
-            en: en
-            und: und
-            zxx: zxx
           group: 1
           exposed: false
           expose:

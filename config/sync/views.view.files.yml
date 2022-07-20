@@ -1,4 +1,4 @@
-uuid: 58fd6fe6-4445-4a59-b634-5b0c5f37ff30
+uuid: e87a2be7-1245-4e31-a295-a7efd15c7cf5
 langcode: sv
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
 _core:
   default_config_hash: DaGeEDJMcbbQtgV96AuPeZ-0irMc_Oa6Zzh2U3Kmul8
 id: files
-label: Files
+label: Filer
 module: file
 description: 'Hitta och hantera filer.'
 tag: default
@@ -21,7 +21,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Files
+      title: Filer
       fields:
         fid:
           id: fid
@@ -756,7 +756,7 @@ display:
       path: admin/content/files
       menu:
         type: tab
-        title: Files
+        title: Filer
         description: ''
         weight: 0
         menu_name: admin

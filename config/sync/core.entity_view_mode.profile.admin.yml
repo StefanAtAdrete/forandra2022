@@ -1,4 +1,4 @@
-uuid: 126c5d7e-7e02-4dc7-8717-2878bf65f035
+uuid: 76ab5f32-12d6-4b5b-840b-5d812d73c5fb
 langcode: sv
 status: true
 dependencies:
@@ -10,6 +10,6 @@ dependencies:
 _core:
   default_config_hash: rNBHCP7hJFMjP_iDe9-0AsSfkGC98V6Lh_oeOwmLos8
 id: profile.admin
-label: Admin
+label: Administrera
 targetEntityType: profile
 cache: true

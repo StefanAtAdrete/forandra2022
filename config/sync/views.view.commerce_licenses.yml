@@ -101,7 +101,7 @@ display:
           admin_label: ''
           entity_type: commerce_license
           plugin_id: commerce_license__entity_label
-          label: Label
+          label: Etikett
           exclude: false
           alter:
             alter_text: false

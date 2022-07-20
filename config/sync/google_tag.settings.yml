@@ -1,9 +1,9 @@
 _core:
   default_config_hash: 65d5DfK5p2hQDpBskbvCIj2hSEqw_Odm2e_d46BH1Lk
-langcode: null
+langcode: sv
 uri: 'public:/'
 compact_snippet: true
-include_file: false
+include_file: true
 rebuild_snippets: true
 flush_snippets: false
 debug_output: false

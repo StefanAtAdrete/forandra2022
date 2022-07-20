@@ -1,4 +1,4 @@
-uuid: ee18aaa1-745c-4f4d-9d6a-0110ca320bd2
+uuid: b8ba4815-d3f0-483d-9ebe-b24123db9daf
 langcode: sv
 status: true
 dependencies:
@@ -19,7 +19,7 @@ required: false
 translatable: true
 default_value:
   -
-    status: 1
+    status: 2
     cid: 0
     last_comment_timestamp: 0
     last_comment_name: null

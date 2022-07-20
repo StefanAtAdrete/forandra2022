@@ -1,4 +1,4 @@
-uuid: e4a8b99c-7846-47ea-8a23-b2bb0d0073fa
+uuid: 57a1a3eb-1a90-4ee1-a5e9-810a6565e655
 langcode: sv
 status: true
 dependencies:
@@ -231,7 +231,7 @@ display:
           entity_type: commerce_order_item
           entity_field: total_price
           plugin_id: field
-          label: 'Total price'
+          label: 'Totalt pris'
           exclude: false
           alter:
             alter_text: false

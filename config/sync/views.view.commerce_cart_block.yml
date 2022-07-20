@@ -1,4 +1,4 @@
-uuid: 64db37dd-5a7e-4c5e-9495-161511216b38
+uuid: f5b8e32e-cf2a-411c-94f2-42b7957c2a6b
 langcode: sv
 status: true
 dependencies:
@@ -11,7 +11,7 @@ dependencies:
 _core:
   default_config_hash: sTKMNZJ4DVegYkx0Lake4yfkpxD7y_g2bQO28xTs5co
 id: commerce_cart_block
-label: 'Cart block'
+label: Varukorgsblock
 module: views
 description: ''
 tag: commerce_cart_block

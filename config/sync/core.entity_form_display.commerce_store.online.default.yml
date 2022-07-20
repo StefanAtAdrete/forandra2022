@@ -1,4 +1,4 @@
-uuid: 4ee1a105-ac7b-4178-b4e6-e348bc407992
+uuid: 60d22d61-8735-485a-b176-3aa05669dde3
 langcode: sv
 status: true
 dependencies:
@@ -81,12 +81,6 @@ content:
     region: content
     settings:
       display_label: true
-    third_party_settings: {  }
-  shipping_countries:
-    type: options_select
-    weight: 4
-    region: content
-    settings: {  }
     third_party_settings: {  }
   tax_registrations:
     type: options_select

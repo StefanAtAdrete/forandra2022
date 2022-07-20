@@ -1,4 +1,4 @@
-uuid: a6f5e7b2-51ff-4253-b54f-fb82ed3b0870
+uuid: f5d2be64-fc69-4a3f-9b5c-de7cbedd7dd5
 langcode: sv
 status: true
 dependencies:
@@ -9,7 +9,7 @@ dependencies:
     - media
     - user
 _core:
-  default_config_hash: mF_CA96Q4unIl78LRoLKR5YPUDGdxn0wbSqyUbvrQjc
+  default_config_hash: diywn6VdMoQOlDA-xslKdKrDko3SsTKfaK3WBG45UAg
 id: media
 label: Media
 module: views
@@ -135,6 +135,8 @@ display:
           settings:
             image_link: ''
             image_style: thumbnail
+            image_loading:
+              attribute: lazy
           group_column: ''
           group_columns: {  }
           group_rows: true

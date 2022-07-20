@@ -1,4 +1,4 @@
-uuid: 12df6338-5154-4fbf-99fa-9ee6b98c87a4
+uuid: b097a436-b021-422b-b421-81aec783e46e
 langcode: sv
 status: true
 dependencies:
@@ -36,7 +36,7 @@ display:
           entity_type: commerce_order_item
           entity_field: purchased_entity
           plugin_id: field
-          label: Item
+          label: Artikel
           exclude: false
           alter:
             alter_text: false
@@ -268,7 +268,7 @@ display:
           entity_type: commerce_order_item
           entity_field: total_price
           plugin_id: field
-          label: Total
+          label: Totalt
           exclude: false
           alter:
             alter_text: false

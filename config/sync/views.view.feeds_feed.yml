@@ -1,4 +1,4 @@
-uuid: bb7b0b34-cc75-4141-a2a4-edaa6f8b75c6
+uuid: c701b62a-587c-487a-8cc6-b4bdb89a49b0
 langcode: sv
 status: true
 dependencies:
@@ -8,7 +8,7 @@ dependencies:
     - feeds
     - user
 _core:
-  default_config_hash: qEFCGJZmfPO8q5G05QiqwLQcMxrQ7PaLQMmF3nt3iMY
+  default_config_hash: tWyVALKCQ8qgdcJ3RJMV6Uygy6bnl4OwGbokq3KuJIc
 id: feeds_feed
 label: Innehållsflöden
 module: views
@@ -197,7 +197,7 @@ display:
           click_sort_column: target_id
           type: entity_reference_label
           settings:
-            link: true
+            link: false
           group_column: target_id
           group_columns: {  }
           group_rows: true

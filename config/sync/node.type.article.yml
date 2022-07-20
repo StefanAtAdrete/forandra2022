@@ -1,14 +1,7 @@
-uuid: 0830b342-c51d-4d7b-9aa7-23baaa376226
+uuid: bbd6499c-28a7-48e6-a54f-b75fbc42e1ee
 langcode: sv
 status: true
-dependencies:
-  module:
-    - menu_ui
-third_party_settings:
-  menu_ui:
-    available_menus:
-      - main
-    parent: 'main:'
+dependencies: {  }
 _core:
   default_config_hash: AeW1SEDgb1OTQACAWGhzvMknMYAJlcZu0jljfeU3oso
 name: Artikel
@@ -17,4 +10,4 @@ description: 'Använd <em>artiklar</em> för tidskänsligt innehåll som nyheter
 help: ''
 new_revision: true
 preview_mode: 1
-display_submitted: false
+display_submitted: true

@@ -1,4 +1,4 @@
-uuid: dde3bdfe-e0fb-40df-93c5-e0beae3f4bce
+uuid: d6e21cf8-985b-42d9-b230-bc40d408c472
 langcode: sv
 status: true
 dependencies:
@@ -158,7 +158,7 @@ display:
           entity_type: commerce_order
           entity_field: store_id
           plugin_id: commerce_store
-          label: Store
+          label: Butik
           exclude: false
           alter:
             alter_text: false
@@ -224,7 +224,7 @@ display:
           entity_type: commerce_order
           entity_field: uid
           plugin_id: field
-          label: Customer
+          label: Kund
           exclude: false
           alter:
             alter_text: false
@@ -353,7 +353,7 @@ display:
           entity_type: commerce_order
           entity_field: total_price
           plugin_id: field
-          label: Total
+          label: Totalt
           exclude: false
           alter:
             alter_text: false
@@ -573,7 +573,7 @@ display:
           admin_label: ''
           plugin_id: text_custom
           empty: true
-          content: 'No orders available.'
+          content: 'Inga beställningar tillgängliga.'
           tokenize: false
       sorts: {  }
       arguments: {  }

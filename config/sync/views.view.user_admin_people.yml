@@ -1,4 +1,4 @@
-uuid: 481eaac3-5d04-46a0-834e-954b73dff734
+uuid: 82385957-e2c3-430d-87ac-4944662afbe5
 langcode: sv
 status: true
 dependencies:
@@ -341,7 +341,7 @@ display:
           type: timestamp_ago
           settings:
             future_format: '@interval hence'
-            past_format: '@interval sedan'
+            past_format: '@interval ago'
             granularity: 2
         operations:
           id: operations

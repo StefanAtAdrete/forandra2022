@@ -1,4 +1,4 @@
-uuid: aa048933-d5ab-4d33-bb11-e1cdf7667812
+uuid: 3a57cee3-c54a-4e15-ad42-a862c4eefd6d
 langcode: sv
 status: true
 dependencies:
@@ -19,8 +19,8 @@ content:
     type: oembed
     label: hidden
     settings:
-      max_width: 480
-      max_height: 280
+      max_width: 0
+      max_height: 0
     third_party_settings: {  }
     weight: 0
     region: content

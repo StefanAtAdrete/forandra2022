@@ -1,4 +1,4 @@
-uuid: b8205363-a880-4f01-8f1c-dfe03634098e
+uuid: 013051bc-a3b7-4388-8bda-082d2bbf3d85
 langcode: sv
 status: true
 dependencies:
@@ -24,7 +24,7 @@ display:
     display_plugin: default
     position: 0
     display_options:
-      title: Orders
+      title: Beställningar
       fields:
         order_id:
           id: order_id
@@ -102,7 +102,7 @@ display:
           entity_type: null
           entity_field: order_number
           plugin_id: field
-          label: 'Order number'
+          label: Beställningsnummer
           exclude: false
           alter:
             alter_text: false
@@ -234,7 +234,7 @@ display:
           entity_type: commerce_order
           entity_field: total_price
           plugin_id: field
-          label: Total
+          label: Totalt
           exclude: false
           alter:
             alter_text: false
@@ -403,7 +403,7 @@ display:
           plugin_id: text
           empty: true
           content:
-            value: 'You have not placed any orders with us yet.'
+            value: 'Du har inte gjort några beställningar hos oss ännu.'
             format: basic_html
           tokenize: false
       sorts: {  }
@@ -578,7 +578,7 @@ display:
       path: user/%user/orders
       menu:
         type: tab
-        title: Orders
+        title: Beställningar
         description: ''
         weight: 0
         expanded: false
