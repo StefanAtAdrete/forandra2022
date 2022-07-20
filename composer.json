@@ -58,6 +58,7 @@
         "drupal/hook_event_dispatcher": "^2.5",
         "drupal/iek": "^1.2",
         "drupal/image_effects": "^3.3",
+        "drupal/imagick": "^1.5",
         "drupal/jsonapi_extras": "^3.20",
         "drupal/layout_builder_component_attributes": "^2.0",
         "drupal/layout_builder_styles": "^1.0@beta",
