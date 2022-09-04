@@ -1,0 +1,222 @@
+uuid: a0aa115a-7766-4d75-bfd2-6da25fb397c1
+langcode: sv
+status: true
+dependencies:
+  config:
+    - core.base_field_override.node.video_post.title
+    - field.field.node.video_post.body
+    - field.field.node.video_post.field_media
+    - field.field.node.video_post.field_media_image
+    - field.field.node.video_post.field_standardimg
+    - node.type.video_post
+  module:
+    - feeds_ex
+    - feeds_tamper
+    - node
+    - publication_date
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      a8156290-17da-4afb-b292-3fbec4b52fa4:
+        separator: ','
+        limit: null
+        uuid: a8156290-17da-4afb-b292-3fbec4b52fa4
+        plugin: explode
+        source: _snippet_title
+        weight: 0
+        label: Explode
+      9bf784bd-a9ee-4c01-83eb-10c0f2228416:
+        uuid: 9bf784bd-a9ee-4c01-83eb-10c0f2228416
+        plugin: html_entity_decode
+        source: _snippet_title
+        weight: 1
+        label: 'HTML entity decode'
+      5ac23227-488d-4eba-933b-2214b6b8d354:
+        separator: ','
+        limit: null
+        uuid: 5ac23227-488d-4eba-933b-2214b6b8d354
+        plugin: explode
+        source: _snippet_channeltitle
+        weight: 0
+        label: Explode
+      9d2e7e83-99b9-427a-aa8c-e2f55b880bfe:
+        separator: ','
+        limit: null
+        uuid: 9d2e7e83-99b9-427a-aa8c-e2f55b880bfe
+        plugin: explode
+        source: id_videoid_new
+        weight: 0
+        label: Explode
+      9eb6183d-c59f-49e0-8bee-6f3edce75a06:
+        text: 'https://www.youtube.com/watch?v=[id_videoid_new]'
+        uuid: 9eb6183d-c59f-49e0-8bee-6f3edce75a06
+        plugin: rewrite
+        source: id_videoid_new
+        weight: 1
+        label: 'Rewrite add https://www.youtube.com/watch?v=[_id_videoid]'
+      bb27c0f8-ccbc-4518-b136-ee7a934c191b:
+        find: _live
+        replace: ''
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: bb27c0f8-ccbc-4518-b136-ee7a934c191b
+        plugin: find_replace
+        source: _snippet_thumbnails_high_url
+        weight: -9
+        label: 'Find replace'
+      ddefc8d8-6416-418a-9b07-ef097d7561dc:
+        separator: ','
+        limit: null
+        uuid: ddefc8d8-6416-418a-9b07-ef097d7561dc
+        plugin: explode
+        source: _snippet_thumbnails_high_url
+        weight: -10
+        label: Explode
+label: 'Video inlägg'
+id: video_node
+description: 'En hållare för video'
+help: 'Skapas efter video är hämtad. Refererar till en videofil som ska visas.'
+import_period: -1
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: false
+  fallback_hub: ''
+  request_timeout: 30
+parser: jsonpath
+parser_configuration:
+  context:
+    value: '$.items[*]'
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+processor: 'entity:node'
+processor_configuration:
+  values:
+    type: video_post
+  langcode: und
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: true
+  authorize: false
+  expire: -1
+  owner_feed_author: false
+  owner_id: 0
+custom_sources:
+  _snippet_title:
+    value: .snippet.title
+    label: .snippet.title
+    machine_name: _snippet_title
+    type: json
+  _snippet_description:
+    value: .snippet.description
+    label: .snippet.description
+    machine_name: _snippet_description
+    type: json
+  '':
+    value: ''
+    label: ''
+    machine_name: ''
+    type: json
+  _id_videoid:
+    value: .id.VideoId
+    label: .id.VideoId
+    machine_name: _id_videoid
+    type: json
+  _snippets_thumbnail_high_url:
+    value: .snippets.thumbnail.high.url
+    label: .snippets.thumbnail.high.url
+    machine_name: _snippets_thumbnail_high_url
+    type: json
+  _snippet_channeltitle:
+    value: .snippet.channelTitle
+    label: .snippet.channelTitle
+    machine_name: _snippet_channeltitle
+    type: json
+  _snippet_publishedat:
+    value: .snippet.publishedAt
+    label: .snippet.publishedAt
+    machine_name: _snippet_publishedat
+    type: json
+  _snippet_thumbnails_high_url:
+    value: .snippet.thumbnails.high.url
+    label: .snippet.thumbnails.high.url
+    machine_name: _snippet_thumbnails_high_url
+    type: json
+  id_videoid_new:
+    value: .id.videoId
+    label: .id.videoId
+    machine_name: id_videoid_new
+    type: json
+mappings:
+  -
+    target: title
+    map:
+      value: _snippet_title
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: body
+    map:
+      value: _snippet_description
+      summary: _snippet_description
+    settings:
+      language: ''
+      format: basic_html
+  -
+    target: field_media
+    map:
+      target_id: id_videoid_new
+    settings:
+      language: ''
+      reference_by: field_media_oembed_video
+      feeds_item: guid
+      autocreate: 0
+  -
+    target: nid
+    map:
+      value: id_videoid_new
+    settings: {  }
+    unique:
+      value: '1'
+  -
+    target: uid
+    map:
+      target_id: _snippet_channeltitle
+    settings:
+      language: ''
+      reference_by: name
+      autocreate: 0
+  -
+    target: published_at
+    map:
+      value: _snippet_publishedat
+    settings:
+      language: null
+      timezone: UTC
+  -
+    target: field_standardimg
+    map:
+      target_id: _snippet_thumbnails_high_url
+      alt: _snippet_title
+      title: _snippet_title
+    settings:
+      language: ''
+      reference_by: fid
+      existing: '0'
+      autocreate: 0
+  -
+    target: field_media_image
+    map:
+      target_id: _snippet_thumbnails_high_url
+    settings:
+      language: ''
+      reference_by: feeds_item
+      feeds_item: guid
+      autocreate: 0

@@ -1,0 +1,25 @@
+uuid: 5ec0d12e-f70a-4aac-938f-a569c0ff7227
+langcode: sv
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - forandra_subtheme
+_core:
+  default_config_hash: n_nlgjggHVfQt2H__zvLOKB2YtjPDbQ5tHijF9LE1aM
+id: forandra_subtheme_site_branding
+theme: forandra_subtheme
+region: secondary_menu
+weight: -6
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Webbplatsens varumärke'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: false
+visibility: {  }

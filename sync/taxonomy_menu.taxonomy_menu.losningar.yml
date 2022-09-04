@@ -1,0 +1,16 @@
+uuid: 420f9e46-7d86-4d2d-b224-4bba6be4a7ec
+langcode: sv
+status: true
+dependencies:
+  config:
+    - system.menu.main
+    - taxonomy.vocabulary.tags
+id: losningar
+label: Lösningar
+vocabulary: tags
+menu: main
+expanded: true
+depth: 2
+menu_parent: 'main:'
+description_field_name: ''
+use_term_weight_order: true

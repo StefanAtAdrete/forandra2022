@@ -1,0 +1,22 @@
+uuid: fbc12199-bb31-4c55-8177-f75ebd40ef20
+langcode: sv
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - forandra_subtheme
+_core:
+  default_config_hash: VfPFqqxfkomud5CO8DUijw85QIl9GIxh_nIxLOYESxg
+id: forandra_subtheme_help
+theme: forandra_subtheme
+region: content
+weight: -5
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Hjälp
+  label_display: '0'
+  provider: help
+visibility: {  }

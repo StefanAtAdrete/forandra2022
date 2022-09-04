@@ -1,0 +1,16 @@
+uuid: 3f4d8e27-d2ac-4ede-b4a5-8e6c5f6351d5
+langcode: sv
+status: true
+dependencies:
+  config:
+    - system.menu.main
+    - taxonomy.vocabulary.tags
+id: mentalt
+label: Mentalt
+vocabulary: tags
+menu: main
+expanded: true
+depth: 1
+menu_parent: 'main:'
+description_field_name: ''
+use_term_weight_order: true

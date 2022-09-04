@@ -1,0 +1,29 @@
+uuid: 72f0889d-8cbc-4df2-8a96-5718bba3288a
+langcode: sv
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - forandra_subtheme
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: forandra_subtheme_page_title
+theme: forandra_subtheme
+region: content
+weight: -7
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Sidtitel
+  label_display: '0'
+  provider: core
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      page: page

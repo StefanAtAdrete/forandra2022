@@ -1,0 +1,29 @@
+uuid: a5fd09e8-69af-4cfd-9b66-c1ff85c07f2c
+langcode: sv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_terms
+    - node.type.article
+    - taxonomy.vocabulary.tags
+id: node.article.field_terms
+field_name: field_terms
+entity_type: node
+bundle: article
+label: Nyckelord
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: 8622c607-fdf0-44bd-b9be-b5657e4c48e6
+langcode: sv
+status: true
+dependencies:
+  module:
+    - media
+    - user
+id: user.field_userim_icon
+field_name: field_userim_icon
+entity_type: user
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

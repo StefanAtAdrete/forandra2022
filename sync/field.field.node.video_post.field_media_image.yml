@@ -1,0 +1,21 @@
+uuid: 632d6e19-d18d-4940-b684-ae7d99fb4b86
+langcode: sv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_media_image
+    - node.type.video_post
+id: node.video_post.field_media_image
+field_name: field_media_image
+entity_type: node
+bundle: video_post
+label: 'Media bild'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings: {  }
+field_type: entity_reference

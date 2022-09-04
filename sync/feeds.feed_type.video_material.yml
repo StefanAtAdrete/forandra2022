@@ -1,0 +1,154 @@
+uuid: 52703b81-a401-462c-af52-4496c8d43af6
+langcode: sv
+status: true
+dependencies:
+  config:
+    - field.field.media.remote_video.field_media_oembed_video
+    - media.type.remote_video
+  module:
+    - feeds_ex
+    - feeds_tamper
+    - media
+third_party_settings:
+  feeds_tamper:
+    tampers:
+      4b38a4f2-772b-4d2a-b2b1-5fc5a1d3ca79:
+        separator: ','
+        limit: null
+        uuid: 4b38a4f2-772b-4d2a-b2b1-5fc5a1d3ca79
+        plugin: explode
+        source: _id_videoid
+        weight: -9
+        label: Explode
+      78a9e0dc-aada-4d7e-8ca7-deb1110c7175:
+        text: 'https://www.youtube.com/watch?v=[_id_videoid]'
+        uuid: 78a9e0dc-aada-4d7e-8ca7-deb1110c7175
+        plugin: rewrite
+        source: _id_videoid
+        weight: -8
+        label: 'Rewrite add url before ID'
+      9c0b7d21-1fbd-452a-a0ed-f682eb3d1a58:
+        find: ''
+        replace: ''
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: 9c0b7d21-1fbd-452a-a0ed-f682eb3d1a58
+        plugin: find_replace
+        source: _snippet_title
+        weight: 0
+        label: 'Find replace'
+      1b770dbc-ab33-47f4-aeef-796af088f9d9:
+        separator: ','
+        limit: null
+        uuid: 1b770dbc-ab33-47f4-aeef-796af088f9d9
+        plugin: explode
+        source: _snippet_title
+        weight: 1
+        label: Explode
+      3bd8bee7-309b-4bc2-b771-41eeea8d0b63:
+        separator: ','
+        limit: null
+        uuid: 3bd8bee7-309b-4bc2-b771-41eeea8d0b63
+        plugin: explode
+        source: _snippet_thumbnails_high_url
+        weight: 1
+        label: Explode
+      1071dbc8-6f53-475e-9f38-11246ea91bb4:
+        find: _live
+        replace: ''
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: 1071dbc8-6f53-475e-9f38-11246ea91bb4
+        plugin: find_replace
+        source: _id_videoid
+        weight: -10
+        label: 'Find replace'
+      465c1b6f-3ec8-4e8b-bda4-70eaec17c1d2:
+        find: _live
+        replace: ''
+        case_sensitive: false
+        word_boundaries: false
+        whole: false
+        uuid: 465c1b6f-3ec8-4e8b-bda4-70eaec17c1d2
+        plugin: find_replace
+        source: _snippet_thumbnails_high_url
+        weight: 2
+        label: 'Find replace'
+label: 'Video material'
+id: video_material
+description: 'Hämta video till mediabibliotek'
+help: 'Gör detta först för att sedan koppla video till artikel eller videoinlägg (nod).'
+import_period: -1
+fetcher: http
+fetcher_configuration:
+  auto_detect_feeds: false
+  use_pubsubhubbub: false
+  always_download: false
+  fallback_hub: ''
+  request_timeout: 30
+parser: jsonpath
+parser_configuration:
+  context:
+    value: '$.items[*]'
+  source_encoding:
+    - auto
+  display_errors: false
+  line_limit: 100
+processor: 'entity:media'
+processor_configuration:
+  values:
+    bundle: remote_video
+  langcode: sv
+  insert_new: 1
+  update_existing: 2
+  update_non_existent: _keep
+  skip_hash_check: true
+  authorize: false
+  expire: -1
+  owner_feed_author: true
+  owner_id: 0
+custom_sources:
+  _id_videoid:
+    value: .id.videoId
+    label: .id.videoId
+    machine_name: _id_videoid
+    type: json
+  _snippet_title:
+    value: .snippet.title
+    label: .snippet.title
+    machine_name: _snippet_title
+    type: json
+  _snippet_thumbnails_high_url:
+    value: .snippet.thumbnails.high.url
+    label: .snippet.thumbnails.high.url
+    machine_name: _snippet_thumbnails_high_url
+    type: json
+mappings:
+  -
+    target: field_media_oembed_video
+    map:
+      value: _id_videoid
+    settings:
+      language: null
+    unique:
+      value: '1'
+  -
+    target: name
+    map:
+      value: _snippet_title
+    settings:
+      language: null
+    unique: {  }
+  -
+    target: thumbnail
+    map:
+      target_id: _snippet_thumbnails_high_url
+      alt: _snippet_title
+      title: _snippet_title
+    settings:
+      language: ''
+      reference_by: uuid
+      existing: '1'
+      autocreate: 0

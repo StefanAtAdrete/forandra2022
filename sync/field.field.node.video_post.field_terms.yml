@@ -1,0 +1,29 @@
+uuid: 92f41288-3a7f-4cdb-8d1b-31abfec98347
+langcode: sv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_terms
+    - node.type.video_post
+    - taxonomy.vocabulary.tags
+id: node.video_post.field_terms
+field_name: field_terms
+entity_type: node
+bundle: video_post
+label: Nyckelord
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      tags: tags
+    sort:
+      field: name
+      direction: asc
+    auto_create: true
+    auto_create_bundle: tags
+field_type: entity_reference

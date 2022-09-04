@@ -1,0 +1,24 @@
+uuid: 3851ef23-987e-4c32-b860-e664a33fa052
+langcode: sv
+status: true
+dependencies:
+  module:
+    - imagick
+name: mini_cirkular_icon
+label: 'Mini cirkulär ikon'
+effects:
+  f565cbbf-ad3f-4dc9-9bf6-cc9771880a9a:
+    uuid: f565cbbf-ad3f-4dc9-9bf6-cc9771880a9a
+    id: image_rounded_corners
+    weight: -8
+    data:
+      x_rounding: '150'
+      y_rounding: '150'
+      stroke_width: '10'
+      displace: '0'
+      size_correction: '0'
+  e9f19186-d410-432a-8b99-18c37f172ec6:
+    uuid: e9f19186-d410-432a-8b99-18c37f172ec6
+    id: image_transparent_background
+    weight: -10
+    data: {  }
