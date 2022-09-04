@@ -1,7 +1,0 @@
-uuid: 68c9d7db-02be-4af3-9c0f-8159b31497a6
-langcode: sv
-status: true
-dependencies: {  }
-id: farg
-label: Färg
-elementType: select

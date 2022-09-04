@@ -1,8 +1,0 @@
-uuid: b95d7c96-8806-46d6-a8a1-edc0e58f4b51
-langcode: sv
-status: true
-dependencies: {  }
-id: rfc822
-label: RFC822
-locked: false
-pattern: 'D, d M y H:i:s O'

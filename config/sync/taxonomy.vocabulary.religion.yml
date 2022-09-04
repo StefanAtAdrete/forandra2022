@@ -1,8 +1,0 @@
-uuid: 30e09fa6-5eed-4ea6-ad77-4889dee330f3
-langcode: sv
-status: true
-dependencies: {  }
-name: Religion
-vid: religion
-description: 'Huvudämne för olika religioner'
-weight: 0
