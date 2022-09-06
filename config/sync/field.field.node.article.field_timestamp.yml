@@ -1,0 +1,21 @@
+uuid: e193629b-fd0f-4249-9817-a9d1421127a8
+langcode: sv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_timestamp
+    - node.type.article
+id: node.article.field_timestamp
+field_name: field_timestamp
+entity_type: node
+bundle: article
+label: Tidsstämpel
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 1660639358
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

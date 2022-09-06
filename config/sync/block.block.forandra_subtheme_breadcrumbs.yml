@@ -1,0 +1,22 @@
+uuid: 90377bf4-2dbf-4799-a14a-1cbc2492bc96
+langcode: sv
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - forandra_subtheme
+_core:
+  default_config_hash: VhBzWb7lMRtIOg9G7VSw_0uopi-7zXeHq4vXqqV1HFE
+id: forandra_subtheme_breadcrumbs
+theme: forandra_subtheme
+region: breadcrumb
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Länkstigar
+  label_display: '0'
+  provider: system
+visibility: {  }

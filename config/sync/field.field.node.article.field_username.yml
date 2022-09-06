@@ -1,0 +1,19 @@
+uuid: 03782241-2247-48ad-ab3e-e719e8a3859b
+langcode: sv
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_username
+    - node.type.article
+id: node.article.field_username
+field_name: field_username
+entity_type: node
+bundle: article
+label: Användarnamn
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

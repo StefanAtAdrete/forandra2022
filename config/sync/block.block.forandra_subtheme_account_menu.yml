@@ -1,0 +1,27 @@
+uuid: 04f2c239-b41b-4df7-a824-1b08db1033a1
+langcode: sv
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - forandra_subtheme
+_core:
+  default_config_hash: gmxYWWHmgbe0Pnv8y48ZLSLH5mEHejOjAP6RLxUfdzU
+id: forandra_subtheme_account_menu
+theme: forandra_subtheme
+region: secondary_menu
+weight: -5
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Meny för användarkonto'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 1
+  expand_all_items: false
+visibility: {  }

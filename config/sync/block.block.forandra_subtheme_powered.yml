@@ -1,0 +1,22 @@
+uuid: 494d51e4-9784-4247-b68b-4cc0ef0268c3
+langcode: sv
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - forandra_subtheme
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: forandra_subtheme_powered
+theme: forandra_subtheme
+region: footer_second
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Drivs av Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }

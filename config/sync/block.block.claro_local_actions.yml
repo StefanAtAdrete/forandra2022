@@ -1,0 +1,20 @@
+uuid: 6aa3fd66-badb-46f6-aa45-2462a16730ec
+langcode: sv
+status: true
+dependencies:
+  theme:
+    - claro
+_core:
+  default_config_hash: CdXfDmRgAvms7EQovxxWPdYi0GitxeRbVtScYK16ZH0
+id: claro_local_actions
+theme: claro
+region: content
+weight: -10
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primära administratörsåtgärder'
+  label_display: '0'
+  provider: core
+visibility: {  }

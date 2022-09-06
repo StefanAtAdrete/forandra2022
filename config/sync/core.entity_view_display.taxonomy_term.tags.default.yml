@@ -1,0 +1,32 @@
+uuid: a0affafb-5413-4a9b-8fd6-25ea75517950
+langcode: sv
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.tags.field_taxonomy_image
+    - taxonomy.vocabulary.tags
+  module:
+    - text
+id: taxonomy_term.tags.default
+targetEntityType: taxonomy_term
+bundle: tags
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_taxonomy_image:
+    type: entity_reference_entity_view
+    label: above
+    settings:
+      view_mode: default
+      link: false
+    third_party_settings: {  }
+    weight: 1
+    region: content
+hidden:
+  langcode: true

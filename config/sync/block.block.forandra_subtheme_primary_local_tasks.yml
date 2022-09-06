@@ -1,0 +1,22 @@
+uuid: 3ecdd379-cd33-476b-8ec9-85263e6bc0f3
+langcode: sv
+status: true
+dependencies:
+  theme:
+    - forandra_subtheme
+_core:
+  default_config_hash: nGE3EoPQQaQCuqTUtZgw0-KIzmrqdKDzdNQf2JyPUt4
+id: forandra_subtheme_primary_local_tasks
+theme: forandra_subtheme
+region: highlighted
+weight: -4
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primära flikar'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility: {  }

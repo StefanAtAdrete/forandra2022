@@ -1,0 +1,23 @@
+uuid: 6a074f10-d76f-4571-bf68-5da7d8865961
+langcode: sv
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - forandra_subtheme
+_core:
+  default_config_hash: yEBET0cqDbk8dkWzaJw-8CKft0961VBflsISoSR6Lj8
+id: forandra_subtheme_search_form_narrow
+theme: forandra_subtheme
+region: primary_menu
+weight: -5
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: 'Search form (narrow)'
+  label_display: '0'
+  provider: search
+  page_id: ''
+visibility: {  }

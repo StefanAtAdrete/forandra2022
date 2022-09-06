@@ -1,0 +1,20 @@
+uuid: b6b8bc81-24f7-4d9e-a120-bac4993dba0a
+langcode: sv
+status: true
+dependencies:
+  module:
+    - cookies
+  theme:
+    - forandra_subtheme
+id: cookiesui
+theme: forandra_subtheme
+region: content
+weight: 0
+provider: null
+plugin: cookies_ui_block
+settings:
+  id: cookies_ui_block
+  label: Cookies
+  label_display: '0'
+  provider: cookies
+visibility: {  }

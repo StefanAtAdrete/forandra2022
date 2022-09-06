@@ -1,0 +1,29 @@
+uuid: 1dbcf0e1-1759-4515-a765-d3738bf6470d
+langcode: sv
+status: true
+dependencies:
+  module:
+    - node
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: 6aOgWsNTXjqrDm98TXSAjP6qd2nCijD1xw45MrnbK-Y
+id: bootstrap_barrio_page_title
+theme: bootstrap_barrio
+region: top_header
+weight: -5
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: Sidtitel
+  label_display: '0'
+  provider: core
+visibility:
+  'entity_bundle:node':
+    id: 'entity_bundle:node'
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
+    bundles:
+      page: page

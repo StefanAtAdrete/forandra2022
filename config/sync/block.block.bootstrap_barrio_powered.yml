@@ -1,0 +1,22 @@
+uuid: ff78e8ab-66d4-4b97-836c-05e946a208b5
+langcode: sv
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_barrio
+_core:
+  default_config_hash: eYL19CLDyinGTWYQfBD1DswWzglEotE_kHnHx3AxTXM
+id: bootstrap_barrio_powered
+theme: bootstrap_barrio
+region: top_header
+weight: 0
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Drivs av Drupal'
+  label_display: '0'
+  provider: system
+visibility: {  }
