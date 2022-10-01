@@ -11,6 +11,7 @@ seckit_xss:
     default-src: ''
     script-src: ''
     object-src: ''
+    style-src: ''
     img-src: ''
     media-src: ''
     frame-src: ''
@@ -29,7 +30,7 @@ seckit_xss:
     select: 0
 seckit_csrf:
   origin: false
-  origin_whitelist: ''
+  origin_whitelist: 'https://crm.forandra.nu, http://crm.forandra.nu'
 seckit_clickjacking:
   js_css_noscript: false
   noscript_message: 'Sorry, you need to enable JavaScript to visit this website.'

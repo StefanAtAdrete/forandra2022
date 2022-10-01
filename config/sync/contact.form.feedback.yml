@@ -10,5 +10,5 @@ recipients:
   - info@forandra.nu
 reply: ''
 weight: 0
-message: 'Your message has been sent.'
+message: 'Ditt meddelande har skickats.'
 redirect: ''

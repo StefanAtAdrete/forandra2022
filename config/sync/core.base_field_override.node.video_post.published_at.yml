@@ -1,0 +1,20 @@
+uuid: 24424e2e-3bb7-40f0-b62a-51bc5b44335e
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.video_post
+  module:
+    - publication_date
+id: node.video_post.published_at
+field_name: published_at
+entity_type: node
+bundle: video_post
+label: 'Published on'
+description: 'Keep the publication timestamp for each node.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: published_at

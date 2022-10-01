@@ -1,0 +1,14 @@
+uuid: 539b5caa-c362-4987-bcdf-1a9f41162e20
+langcode: sv
+status: true
+dependencies: {  }
+id: default
+label: Default
+description: ''
+sitemap_generator: default
+url_generators:
+  custom: custom
+  arbitrary: arbitrary
+  entity: entity
+  index: index
+  entity_menu_link_content: entity_menu_link_content

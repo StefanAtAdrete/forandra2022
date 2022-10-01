@@ -154,6 +154,7 @@ module:
   webform_templates: 0
   webform_ui: 0
   pathauto: 1
+  content_translation: 10
   views: 10
   cookies_facebook_pixel: 11
   cookies_ga: 11

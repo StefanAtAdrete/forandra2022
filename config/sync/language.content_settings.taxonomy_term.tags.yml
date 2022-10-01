@@ -1,0 +1,18 @@
+uuid: 1314a45b-b123-4147-8874-0b2c66a74d16
+langcode: sv
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.tags
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: true
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: taxonomy_term.tags
+target_entity_type_id: taxonomy_term
+target_bundle: tags
+default_langcode: current_interface
+language_alterable: true

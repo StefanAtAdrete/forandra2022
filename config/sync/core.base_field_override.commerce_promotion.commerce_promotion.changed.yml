@@ -1,0 +1,18 @@
+uuid: 4bce27ed-b588-4349-93a5-2a40e7eb293e
+langcode: en
+status: true
+dependencies:
+  module:
+    - commerce_promotion
+id: commerce_promotion.commerce_promotion.changed
+field_name: changed
+entity_type: commerce_promotion
+bundle: commerce_promotion
+label: Changed
+description: 'The time when the promotion was last edited.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

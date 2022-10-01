@@ -8,4 +8,5 @@ id: global
 label: Global
 tags:
   canonical_url: '[current-page:url]'
+  facebook_domain_verification: hi7c7vmfz6dvqcs1ouc98zywij49l7
   title: '[current-page:title] | [site:name]'

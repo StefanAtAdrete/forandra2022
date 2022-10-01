@@ -1,0 +1,18 @@
+uuid: 7a0c259d-27fa-4bee-99eb-8c1b007e6d16
+langcode: sv
+status: true
+dependencies:
+  config:
+    - commerce_stock_local.commerce_stock_location_type.default
+  module:
+    - content_translation
+third_party_settings:
+  content_translation:
+    enabled: false
+    bundle_settings:
+      untranslatable_fields_hide: '0'
+id: commerce_stock_location.default
+target_entity_type_id: commerce_stock_location
+target_bundle: default
+default_langcode: site_default
+language_alterable: false

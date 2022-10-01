@@ -6,7 +6,7 @@ dependencies:
     - system.menu.main
     - taxonomy.vocabulary.tags
 id: losningar
-label: Lösningar
+label: 'Taxonomimeny för etiketter'
 vocabulary: tags
 menu: main
 expanded: true

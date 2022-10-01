@@ -1,0 +1,18 @@
+uuid: 1f615f91-57e3-459d-b690-714a3ab775cb
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.video_post
+id: node.video_post.created
+field_name: created
+entity_type: node
+bundle: video_post
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created

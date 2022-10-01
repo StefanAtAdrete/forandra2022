@@ -1,4 +1,4 @@
-uuid: b6b8bc81-24f7-4d9e-a120-bac4993dba0a
+uuid: 4b2e4f60-810f-44d7-aed9-2edd145aaf4a
 langcode: sv
 status: true
 dependencies:
@@ -8,13 +8,13 @@ dependencies:
     - forandra_subtheme
 id: cookiesui
 theme: forandra_subtheme
-region: content
+region: header
 weight: 0
 provider: null
 plugin: cookies_ui_block
 settings:
   id: cookies_ui_block
-  label: Cookies
+  label: 'Cookies UI'
   label_display: '0'
   provider: cookies
 visibility: {  }

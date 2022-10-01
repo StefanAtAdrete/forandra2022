@@ -1,7 +1,7 @@
 langcode: sv
 facebook_id: '1233422577457238'
 visibility:
-  request_path_mode: null
+  request_path_mode: all_pages
   request_path_pages: ''
   user_role_mode: null
   user_role_roles: {  }

@@ -2,6 +2,8 @@ uuid: 9575955c-6471-46c3-98f1-261510e0bdb3
 langcode: sv
 status: true
 dependencies:
+  config:
+    - user.role.administrator
   module:
     - node
     - taxonomy
@@ -192,17 +194,17 @@ display:
         type: mini
         options:
           offset: 0
-          items_per_page: 10
+          items_per_page: 25
           total_pages: null
           id: 0
           tags:
             next: ››
             previous: ‹‹
           expose:
-            items_per_page: false
+            items_per_page: true
             items_per_page_label: 'Items per page'
-            items_per_page_options: '5, 10, 25, 50'
-            items_per_page_options_all: false
+            items_per_page_options: '5, 10, 25, 50, 100'
+            items_per_page_options_all: true
             items_per_page_options_all_label: '- All -'
             offset: false
             offset_label: Offset
@@ -217,9 +219,10 @@ display:
           sort_asc_label: Asc
           sort_desc_label: Desc
       access:
-        type: perm
+        type: role
         options:
-          perm: 'access content'
+          role:
+            administrator: administrator
       cache:
         type: tag
         options: {  }
@@ -317,7 +320,7 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags: {  }
   page_1:
     id: page_1
@@ -334,5 +337,5 @@ display:
         - 'languages:language_interface'
         - url.query_args
         - 'user.node_grants:view'
-        - user.permissions
+        - user.roles
       tags: {  }

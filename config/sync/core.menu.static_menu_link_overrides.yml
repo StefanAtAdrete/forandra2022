@@ -9,86 +9,188 @@ definitions:
     expanded: false
     enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__mentalt__2':
-    weight: -49
     menu_name: main
     parent: ''
+    weight: -49
+    expanded: true
     enabled: true
-    expanded: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__mentalt__3':
-    expanded: true
+    menu_name: main
     parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.mentalt.2'
     weight: 0
-    menu_name: main
+    expanded: true
     enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__9':
-    enabled: false
-    menu_name: account
-    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.6'
+    expanded: true
+    parent: ''
     weight: 0
-    expanded: true
+    menu_name: main
+    enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__6':
-    enabled: false
-    menu_name: account
-    parent: ''
     expanded: true
-    weight: 2
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.5'
+    weight: 0
+    menu_name: main
+    enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__2':
-    enabled: false
-    menu_name: account
-    parent: ''
-    weight: 4
     expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.1'
+    weight: 0
+    menu_name: main
+    enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__5':
-    enabled: false
-    menu_name: account
-    parent: ''
-    weight: 8
     expanded: true
+    parent: ''
+    weight: 0
+    menu_name: main
+    enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__8':
-    enabled: false
-    menu_name: account
+    expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.5'
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__4':
+    expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.1'
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__3':
+    expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.1'
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__10':
+    expanded: true
     parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.9'
     weight: 0
-    expanded: true
-  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__4':
-    enabled: false
-    menu_name: account
-    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.2'
-    weight: 1
-    expanded: true
-  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__3':
-    enabled: false
-    menu_name: account
-    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.2'
-    weight: 0
-    expanded: true
-  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__10':
-    enabled: false
-    menu_name: account
-    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.5'
-    weight: 0
-    expanded: true
+    menu_name: main
+    enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__11':
-    enabled: false
-    menu_name: account
-    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.5'
-    weight: 1
     expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.9'
+    weight: 0
+    menu_name: main
+    enabled: true
   standard__front_page:
-    weight: -50
     menu_name: main
     parent: ''
+    weight: -50
     expanded: false
     enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__mentalt__6':
-    weight: -48
     menu_name: main
     parent: ''
+    weight: -48
     expanded: true
     enabled: true
   'taxonomy_menu__menu_link:taxonomy_menu__menu_link__mentalt__5':
-    weight: -47
     menu_name: main
     parent: ''
+    weight: -47
     expanded: true
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__13':
+    expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.9'
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__12':
+    expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.9'
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__21':
+    expanded: true
+    parent: ''
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__23':
+    expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.21'
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__26':
+    expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.21'
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__25':
+    expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.21'
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__22':
+    expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.21'
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__24':
+    expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.21'
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__1':
+    expanded: true
+    parent: ''
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__14':
+    expanded: true
+    parent: ''
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__17':
+    expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.14'
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__16':
+    expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.14'
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__19':
+    expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.14'
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__18':
+    expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.14'
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__20':
+    expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.14'
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__15':
+    expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.14'
+    weight: 0
+    menu_name: main
+    enabled: true
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__losningar__7':
+    expanded: true
+    parent: 'taxonomy_menu.menu_link:taxonomy_menu.menu_link.losningar.5'
+    weight: 0
+    menu_name: main
     enabled: true

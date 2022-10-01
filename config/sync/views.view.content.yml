@@ -15,7 +15,7 @@ _core:
 id: content
 label: Content
 module: node
-description: 'Find and manage content.'
+description: 'Hitta och hantera innehåll.'
 tag: default
 base_table: node_field_data
 base_field: nid

@@ -1,0 +1,50 @@
+/**
+ * @file
+ * Subtheme specific CSS.
+ */
+
+/*.node--view-mode-teaser {
+  border-bottom: 0px;
+  margin-bottom: 0px;
+  margin-top: 0px;
+}*/
+
+
+
+.field--name-title a {
+  text-decoration: none;
+}
+
+.sidebar_first {
+  margin-top: 10px;
+}
+
+
+.cart-offcanvas {
+    position: fixed;
+    min-height: 100%;
+    max-height: none;
+    top: 0;
+    display: block;
+    background: #fff;
+    transition: transform .3s cubic-bezier(.4,0,.6,1);
+    transform: translate3d(0,0,0);
+    backface-visibility: hidden;
+    overflow: hidden;
+    z-index: 1080;
+}
+
+#block-forandra-subtheme-account-menu {
+  display: inline-block;
+}
+
+
+.dropdown-menu {
+  background-color: #0083b7;
+}
+
+ul li.dropdown-item a {
+  color: #000;
+}
+
+

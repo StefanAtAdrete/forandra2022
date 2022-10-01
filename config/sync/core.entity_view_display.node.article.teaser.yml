@@ -137,6 +137,67 @@ third_party_settings:
                   class: ''
                   style: ''
                   data: ''
+          676aa2cb-6535-4d41-ac67-04cce8ca247c:
+            uuid: 676aa2cb-6535-4d41-ac67-04cce8ca247c
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: content
+                  image_style: medium
+                  image_loading:
+                    attribute: lazy
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+          2cdd8d08-4722-4d22-9f4a-d37fba139960:
+            uuid: 2cdd8d08-4722-4d22-9f4a-d37fba139960
+            region: content
+            configuration:
+              id: 'field_block:node:article:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_summary_or_trimmed
+                label: hidden
+                settings:
+                  trim_length: 600
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          c44f1f81-de56-4526-8ce8-64f9ae586c4a:
+            uuid: c44f1f81-de56-4526-8ce8-64f9ae586c4a
+            region: content
+            configuration:
+              id: 'field_block:node:article:field_tags'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+          3334814d-182a-446b-88c5-fddf9cbe666f:
+            uuid: 3334814d-182a-446b-88c5-fddf9cbe666f
+            region: content
+            configuration:
+              id: 'extra_field_block:node:article:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 3
+            additional: {  }
         third_party_settings: {  }
 _core:
   default_config_hash: 83jX5ChAGdMzOxiDA_B1NjgebVMuD8lNVDgClg_QVP8

@@ -1,0 +1,28 @@
+label: 'Commerce Product Variations Table form'
+display:
+  default:
+    display_title: Master
+    display_options:
+      exposed_form:
+        options:
+          submit_button: Apply
+          reset_button_label: Reset
+          exposed_sorts_label: 'Sort by'
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      fields:
+        title:
+          label: Variation
+          separator: ', '
+        price__number:
+          label: Price
+          separator: ', '
+        commerce_pvt_variation_edit_quantity:
+          label: Quantity
+        commerce_pvt_variation_subtotal:
+          label: Subtotal
+      title: 'Select variants'
+      arguments:
+        product_id:
+          exception:
+            title: All

@@ -1,0 +1,20 @@
+uuid: 082da136-9dfa-4db8-84b2-5a8ba1ef5609
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.video_post
+  module:
+    - path
+id: node.video_post.path
+field_name: path
+entity_type: node
+bundle: video_post
+label: 'URL alias'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path
