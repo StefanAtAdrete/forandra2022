@@ -95,6 +95,7 @@
         "drupal/webhooks": "^1.0@alpha",
         "drush/drush": "^10.6",
         "facebook/php-business-sdk": "^8.0.3",
+        "querypath/querypath": "^3.0",
         "twig/twig": "2.15.3",
         "wikimedia/composer-merge-plugin": "^2.0"
     },
